@@ -83,7 +83,7 @@
 			"response": []
 		},
 		{
-			"name": "get-incomes",
+			"name": "get-incomes-service",
 			"id": "05ed31a2-351a-4304-909f-28779f5b6041",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
