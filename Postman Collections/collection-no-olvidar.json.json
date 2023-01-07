@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "fe4f96ca-50b6-4bca-9a0f-ccf50fb3fcc4",
+		"name": "No-olvidar-backend",
+		"description": "Api get events",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "events-web",
+			"_postman_id": "5faeec78-af03-4c8c-a110-598bab26a928",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer prv_prod_MIICWwIBAAKBgH3oMBjzHN7ncF30Xqg86v+JqmNWm4TjN5Dl6kOf8ytHvSGLqeFG",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://no-olvidar.herokuapp.com/v1/event/web/:type/:nit/:typeBusiness/:incomeId/:regime/:city",
+					"protocol": "https",
+					"host": [
+						"no-olvidar",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"event",
+						"web",
+						":type",
+						":nit",
+						":typeBusiness",
+						":incomeId",
+						":regime",
+						":city"
+					],
+					"variable": [
+						{
+							"id": "3b45d22e-b5e7-44de-b66d-12e4069434f9",
+							"key": "type",
+							"value": "juridica",
+							"description": "'natural' | 'juridica'",
+							"type": "string"
+						},
+						{
+							"id": "4fb836a9-b8d3-45a4-afa6-60f943c17e91",
+							"key": "nit",
+							"value": "901271112",
+							"description": "numero de cedula o nit",
+							"type": "string"
+						},
+						{
+							"id": "13578591-b7f1-4a6c-a02f-715b3f4d471d",
+							"key": "typeBusiness",
+							"value": "micro",
+							"description": "'contributors'| 'micro' |'small' | 'medium' | 'companie_sclosure'",
+							"type": "string"
+						},
+						{
+							"id": "4bf5a989-aabf-42ce-854b-96a575c01706",
+							"key": "incomeId",
+							"value": "24",
+							"description": "id del income seleccionado de la api \"https://no-olvidar.herokuapp.com/v1/event/get-incomes\"",
+							"type": "string"
+						},
+						{
+							"id": "659899ac-69f8-4b83-b8f7-2288b953ed7f",
+							"key": "regime",
+							"value": "common_regime",
+							"description": "'special_tax' | 'common_regime' | 'preferential_regime'",
+							"type": "string"
+						},
+						{
+							"id": "72c34636-60d4-48e0-9484-3ce8c9ca4fba",
+							"key": "city",
+							"value": "Bogotá",
+							"description": "Nombre de la ciudad seleccionada de la api \"https://no-olvidar.herokuapp.com/v1/utils/citys\"",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-incomes",
+			"_postman_id": "05ed31a2-351a-4304-909f-28779f5b6041",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer prv_prod_MIICWwIBAAKBgH3oMBjzHN7ncF30Xqg86v+JqmNWm4TjN5Dl6kOf8ytHvSGLqeFG",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://no-olvidar.herokuapp.com/v1/event/get-incomes",
+					"protocol": "https",
+					"host": [
+						"no-olvidar",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"event",
+						"get-incomes"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-citys",
+			"_postman_id": "64698cd2-9a5c-4afb-a42a-34ffd78117cb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer prv_prod_MIICWwIBAAKBgH3oMBjzHN7ncF30Xqg86v+JqmNWm4TjN5Dl6kOf8ytHvSGLqeFG",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://no-olvidar.herokuapp.com/v1/utils/citys",
+					"protocol": "https",
+					"host": [
+						"no-olvidar",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"utils",
+						"citys"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
