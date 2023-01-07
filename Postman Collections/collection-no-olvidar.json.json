@@ -123,7 +123,7 @@
 			"response": []
 		},
 		{
-			"name": "get-citys",
+			"name": "get-citys-service",
 			"id": "64698cd2-9a5c-4afb-a42a-34ffd78117cb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
