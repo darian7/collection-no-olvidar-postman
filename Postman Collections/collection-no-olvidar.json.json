@@ -22,7 +22,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://no-olvidar.herokuapp.com/v1/event/web/:type/:nit/:typeBusiness/:incomeId/:regime/:city",
+					"raw": "https://no-olvidar.herokuapp.com/v1/event/web/:type/:nit/:typeBusiness/:incomeId/:regime/:city/:name/:email/:industries",
 					"protocol": "https",
 					"host": [
 						"no-olvidar",
@@ -38,44 +38,56 @@
 						":typeBusiness",
 						":incomeId",
 						":regime",
-						":city"
+						":city",
+						":name",
+						":email",
+						":industries"
 					],
 					"variable": [
 						{
-							"id": "3b45d22e-b5e7-44de-b66d-12e4069434f9",
 							"key": "type",
 							"value": "juridica",
 							"description": "'natural' | 'juridica'"
 						},
 						{
-							"id": "4fb836a9-b8d3-45a4-afa6-60f943c17e91",
 							"key": "nit",
-							"value": "901271112",
+							"value": "901271115",
 							"description": "numero de cedula o nit"
 						},
 						{
-							"id": "13578591-b7f1-4a6c-a02f-715b3f4d471d",
 							"key": "typeBusiness",
 							"value": "micro",
 							"description": "'contributors'| 'micro' |'small' | 'medium' | 'companie_sclosure'"
 						},
 						{
-							"id": "4bf5a989-aabf-42ce-854b-96a575c01706",
 							"key": "incomeId",
 							"value": "24",
 							"description": "id del income seleccionado de la api \"https://no-olvidar.herokuapp.com/v1/event/get-incomes\""
 						},
 						{
-							"id": "659899ac-69f8-4b83-b8f7-2288b953ed7f",
 							"key": "regime",
 							"value": "common_regime",
 							"description": "'special_tax' | 'common_regime' | 'preferential_regime'"
 						},
 						{
-							"id": "72c34636-60d4-48e0-9484-3ce8c9ca4fba",
 							"key": "city",
 							"value": "Bogotá",
 							"description": "Nombre de la ciudad seleccionada de la api \"https://no-olvidar.herokuapp.com/v1/utils/citys\""
+						},
+						{
+							"key": "name",
+							"value": "Test business",
+							"description": "Nombre de la empresa"
+						},
+						{
+							"key": "email",
+							"value": "darian7cc@gmail.com",
+							"description": "correo de la empresa"
+						},
+						{
+							"key": "industries",
+							"value": "Entretenimiento",
+							"description": "tipo de industria"
 						}
 					]
 				}
